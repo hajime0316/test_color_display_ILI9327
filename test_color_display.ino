@@ -1,14 +1,14 @@
 #include "ILI9327.h"
 #include <SPI.h>
 
-#define SPI_CS 5
-#define SPI_DC 26
-#define SPI_MOSI 23
-#define SPI_MISO 19
-#define SPI_SCK 18
-#define SPI_RST 27
+#define DISPLAY_CS 5
+#define DISPLAY_DC 26
+#define DISPLAY_MOSI 23
+#define DISPLAY_MISO 19
+#define DISPLAY_SCK 18
+#define DISPLAY_RST 27
 
-ILI9327 display(5, 26, &SPI, 27);
+ILI9327 display(DISPLAY_CS, DISPLAY_DC, &SPI, DISPLAY_RST);
 
 uint16_t color_table[] = {
     ILI9327_BLACK,
