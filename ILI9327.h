@@ -7,7 +7,7 @@
 #include "Adafruit_SPITFT_DBI_TYPE_C.h"
 #include <SPI.h>
 
-#define ILI9327_TFTWIDTH 400  ///< ILI9327 max TFT width
+#define ILI9327_TFTWIDTH 432  ///< ILI9327 max TFT width
 #define ILI9327_TFTHEIGHT 240 ///< ILI9327 max TFT height
 
 #define ILI9327_NOP 0x00     ///< No-op register

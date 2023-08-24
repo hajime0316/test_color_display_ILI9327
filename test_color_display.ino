@@ -49,7 +49,11 @@ void setup()
     }
   }
 
-  delay(10);
+  delay(2000);
+
+  display.fillRect(0, 0, 400, 240, ILI9327_BLUE);
+
+  delay(50);
 }
 
 int i = 0;
@@ -58,17 +62,17 @@ void loop()
 {
   Serial.println("loop!");
 
-  // display.setTextSize(25);
-  // display.setTextColor(ILI9327_ORANGE);
-  // display.setCursor(50, 25);
-  // display.println(i);
+  display.setTextSize(25);
+  display.setTextColor(ILI9327_ORANGE);
+  display.setCursor(50, 25);
+  display.println(i);
 
   delay(1000);
 
-  // display.setTextSize(25);
-  // display.setTextColor(ILI9327_BLUE);
-  // display.setCursor(50, 25);
-  // display.println(i);
+  display.setTextSize(25);
+  display.setTextColor(ILI9327_BLUE);
+  display.setCursor(50, 25);
+  display.println(i);
 
-  // i++;
+  i++;
 }
