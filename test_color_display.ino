@@ -2,11 +2,11 @@
 #include <SPI.h>
 
 #define DISPLAY_CS 5
-#define DISPLAY_DC 26
+#define DISPLAY_DC 16
 #define DISPLAY_MOSI 23
 #define DISPLAY_MISO 19
 #define DISPLAY_SCK 18
-#define DISPLAY_RST 27
+#define DISPLAY_RST 17
 
 ILI9327 display(DISPLAY_CS, DISPLAY_DC, &SPI, DISPLAY_RST);
 
